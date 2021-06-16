@@ -1,0 +1,18 @@
+@charset 'utf-8';
+
+.opponent {
+  &__container {
+    padding: 24px;
+    text-align: center;
+  }
+
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+
+  &__img {
+    width: auto;
+    height: 100%;
+  }
+}

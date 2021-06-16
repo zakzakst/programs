@@ -1,5 +1,6 @@
 import './scss/style.scss';
 import './pug/index.pug';
-import { test } from './ts/index';
+import { Janken } from './ts/index';
 
-test();
+const janken = new Janken();
+janken.init();

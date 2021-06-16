@@ -1,1 +1,25 @@
- <div class="test">test</div>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>じゃんけんゲーム</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="opponent__container has-background-light">
+      <div class="opponent"></div>
+    </div>
+    <div class="myself"></div>
+    <div class="result is-hidden">
+      <p class="result__text has-text-centered has-text-weight-bold is-size-3"></p>
+    </div>
+    <div class="reset is-hidden">
+      <p class="reset__btn button is-fullwidth">もう一回やる</p>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

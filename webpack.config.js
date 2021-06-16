@@ -64,9 +64,9 @@ module.exports = {
           },
           {
             loader: 'pug-html-loader',
-            options: {
-              pretty: true,
-            },
+            // options: {
+            //   pretty: true,
+            // },
           },
         ],
       },

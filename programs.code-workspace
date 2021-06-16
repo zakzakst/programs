@@ -1,0 +1,54 @@
+{
+  "folders": [
+    {
+      "path": "./"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      // "dist": true,
+      // "package-lock.json": true,
+      // "README.md": true
+    },
+    "git.ignoreLimitWarning": true,
+
+    "todohighlight.keywords": [
+      {
+        "text": "DEBUG:",
+        "color": "#FFFFFF",
+        "backgroundColor": "#664400"
+      },
+      {
+        "text": "NOTE:",
+        "color": "#FFFFFF",
+        "backgroundColor": "#002288"
+      },
+      {
+        "text": "HACK:",
+        "color": "#FFFFFF",
+        "backgroundColor": "#006600"
+      },
+      {
+        "text": "TODO:",
+        "color": "#FFF",
+        "backgroundColor": "#662200",
+        "overviewRulerColor": "transparent",
+      },
+      {
+        "text": "FIXME",
+        "color": "#FFF",
+        "backgroundColor": "#220088"
+      }
+    ],
+    "todohighlight.defaultStyle": {
+      "overviewRulerColor": "transparent",
+      "isWholeLine": false
+    },
+    "todo.colors.tag": "#666666",
+    "todo.colors.comment": "#666666",
+    "todo.colors.done": "#448844",
+    "todo.colors.cancelled": "#884444",
+    "todo.colors.project": "#99dddd",
+    "todo.colors.projectStatistics": "#99dddd",
+  }
+}

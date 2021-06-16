@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+.myself {
+  padding: 24px 0;
+
+  &__btn {
+    display: flex;
+    height: 80px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: #f5f5f5;
+    }
+    &.is-selected {
+      background: #eeffff;
+    }
+  }
+
+  &__img {
+    width: auto;
+    height: 100%;
+  }
+}

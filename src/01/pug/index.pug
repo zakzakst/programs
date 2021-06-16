@@ -1,1 +1,28 @@
-.test test
+doctype html
+html(lang='ja')
+  head
+    meta(charset='utf-8')
+    title じゃんけんゲーム
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css')
+    //- TODO: エラー解消
+    //- link(rel='stylesheet', href='./style.css')
+  body
+    .container
+      //- 相手
+      .opponent__container.has-background-light
+        .opponent
+
+      //- 自分
+      .myself
+
+      //- 結果
+      .result.is-hidden
+        p.result__text.has-text-centered.has-text-weight-bold.is-size-3
+
+      //- リセット
+      .reset.is-hidden
+        p.reset__btn.button.is-fullwidth もう一回やる
+
+    //- TODO: エラー解消
+    //- script(src='./script.js')

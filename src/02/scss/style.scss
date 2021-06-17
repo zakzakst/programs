@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+// レイアウト
+.container {
+  max-width: 400px;
+  padding: 24px;
+}
+.content {
+  text-align: center;
+}
+
+// タイマー
+.timer-input {
+  &__container {
+    margin-bottom: 12px;
+  }
+
+  display: flex;
+  align-items: center;
+
+  &__input {
+    width: 5%;
+    &.control {
+      width: 30%;
+    }
+  }
+}

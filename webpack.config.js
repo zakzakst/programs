@@ -5,7 +5,7 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const ImageminMozjpeg = require('imagemin-mozjpeg');
 
 // 変数の設定
-const PROJECT_DIR = '01';
+const PROJECT_DIR = '02';
 const MODE = 'production';
 const enabledSourceMap = MODE === 'development';
 

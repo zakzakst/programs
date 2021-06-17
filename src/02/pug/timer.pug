@@ -1,0 +1,20 @@
+.content
+  h2.is-size-5 タイマー
+  p.timer-text.has-text-centered.has-text-weight-bold.is-size-2 00:00:00
+  form(name='timerForm')
+    fieldset.timer-input__container
+      p.field.timer-input
+        span.control.timer-input__input
+          input.input(name='min', type='number', min='0', max='59', placeholder='0')
+        span.timer-input__input :
+        span.control.timer-input__input
+          input.input(name='sec', type='number', min='0', max='59', placeholder='0')
+        span.timer-input__input :
+        span.control.timer-input__input
+          input.input(name='mSec', type='number', min='0', max='59', placeholder='0')
+  .timer-control.columns
+    .column.is-half
+      button.timer-control__start.button.is-fullwidth 開始
+      button.timer-control__stop.button.is-fullwidth.is-hidden 停止
+    .column.is-half
+      button.timer-control__reset.button.is-fullwidth リセット

@@ -5,8 +5,7 @@ export class Janken {
   myselfEl: HTMLElement;
   resultEl: HTMLElement;
   resetEl: HTMLElement;
-  // jankenItems: Array<{id: string, text: string}>;
-  jankenItems: any;
+  jankenItems: Array<{id: string, text: string}>;
   resultItems: Array<{text: string}>;
   opponentText: String;
   gamePlaying: Boolean;

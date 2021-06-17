@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ストップウォッチ・タイマー</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="tabs is-centered">
+      <ul class="tabs__container"></ul>
+    </div>
+    <div class="contents">
+      <div class="content">
+        <h2 class="is-size-5">ストップウォッチ<p class="sw-text has-text-centered has-text-weight-bold is-size-2"></p>
+          <div class="sw-control columns">
+            <div class="column is-half"><button class="sw-control__start button is-fullwidth">開始</button><button class="sw-control__stop button is-fullwidth is-hidden">停止</button></div>
+            <div class="column is-half"><button class="sw-control__reset button is-fullwidth is-hidden">リセット</button></div>
+          </div>
+        </h2>
+      </div>
+      <div class="content">
+        <h2 class="is-size-5">タイマー</h2>
+        <p class="timer-text has-text-centered has-text-weight-bold is-size-2">00:00:00</p>
+        <form name="timerForm">
+          <fieldset class="timer-input__container">
+            <p class="field timer-input"><span class="control timer-input__input"><input class="input" name="min" type="number" min="0" max="59" placeholder="0"></span><span class="timer-input__input">:</span><span class="control timer-input__input"><input class="input" name="sec" type="number" min="0" max="59" placeholder="0"></span><span class="timer-input__input">:</span><span class="control timer-input__input"><input class="input" name="mSec" type="number" min="0" max="59" placeholder="0"></span></p>
+          </fieldset>
+        </form>
+        <div class="timer-control columns">
+          <div class="column is-half"><button class="timer-control__start button is-fullwidth">開始</button><button class="timer-control__stop button is-fullwidth is-hidden">停止</button></div>
+          <div class="column is-half"><button class="timer-control__reset button is-fullwidth">リセット</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

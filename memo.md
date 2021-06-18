@@ -8,3 +8,5 @@
 
 ## 参考
 - [TypeScript と ESLint における検査エラーを無視したい時のおまじないまとめ](https://blog.ojisan.io/eslint-ts-ignore#ファイル単位で無視する)
+// @ts-ignore
+// @ts-nocheck

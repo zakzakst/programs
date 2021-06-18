@@ -1,0 +1,57 @@
+doctype html
+html(lang='ja')
+  head
+    meta(charset='utf-8')
+    title 計算機
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css')
+    //- TODO: エラー解消
+    //- link(rel='stylesheet', href='./style.css')
+  body
+    .container
+      .calculator-result
+        p.is-size-2.has-text-right.calculator-result__num
+      .calculator-calc
+        p.is-size-3.has-text-right
+          span.calculator-calc__sign
+          span.calculator-calc__num
+      .calculator-btn.columns
+        .column
+          button.calculator-btn__num.button.is-dark(data-num='1') 1
+        .column
+          button.calculator-btn__num.button.is-dark(data-num='2') 2
+        .column
+          button.calculator-btn__num.button.is-dark(data-num='3') 3
+        .column
+          button.calculator-btn__sign.button(data-calc-type='division') ÷
+        .column
+          button.calculator-btn__num.button.is-dark(data-num='4') 4
+        .column
+          button.calculator-btn__num.button.is-dark(data-num='5') 5
+        .column
+          button.calculator-btn__num.button.is-dark(data-num='6') 6
+        .column
+          button.calculator-btn__sign.button(data-calc-type='multiple') ×
+        .column
+          button.calculator-btn__num.button.is-dark(data-num='7') 7
+        .column
+          button.calculator-btn__num.button.is-dark(data-num='8') 8
+        .column
+          button.calculator-btn__num.button.is-dark(data-num='9') 9
+        .column
+          button.calculator-btn__sign.button(data-calc-type='subtract') -
+        .column
+          button.calculator-btn__num.button.is-dark(data-num='.') .
+        .column
+          button.calculator-btn__num.button.is-dark(data-num='0') 0
+        .column
+          button.calculator-btn__result.button.is-primary =
+        .column
+          button.calculator-btn__sign.button(data-calc-type='add') +
+        .column
+          button.calculator-btn__delete.button DEL
+        .column
+          button.calculator-btn__clear.button CLR
+
+    //- TODO: エラー解消
+    //- script(src='./script.js')

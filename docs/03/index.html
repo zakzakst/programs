@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>計算機</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="calculator-result">
+      <p class="is-size-2 has-text-right calculator-result__num"></p>
+    </div>
+    <div class="calculator-calc">
+      <p class="is-size-3 has-text-right"><span class="calculator-calc__sign"></span><span class="calculator-calc__num"></span></p>
+    </div>
+    <div class="calculator-btn columns">
+      <div class="column"><button class="calculator-btn__num button is-dark" data-num="1">1</button></div>
+      <div class="column"><button class="calculator-btn__num button is-dark" data-num="2">2</button></div>
+      <div class="column"><button class="calculator-btn__num button is-dark" data-num="3">3</button></div>
+      <div class="column"><button class="calculator-btn__sign button" data-calc-type="division">÷</button></div>
+      <div class="column"><button class="calculator-btn__num button is-dark" data-num="4">4</button></div>
+      <div class="column"><button class="calculator-btn__num button is-dark" data-num="5">5</button></div>
+      <div class="column"><button class="calculator-btn__num button is-dark" data-num="6">6</button></div>
+      <div class="column"><button class="calculator-btn__sign button" data-calc-type="multiple">×</button></div>
+      <div class="column"><button class="calculator-btn__num button is-dark" data-num="7">7</button></div>
+      <div class="column"><button class="calculator-btn__num button is-dark" data-num="8">8</button></div>
+      <div class="column"><button class="calculator-btn__num button is-dark" data-num="9">9</button></div>
+      <div class="column"><button class="calculator-btn__sign button" data-calc-type="subtract">-</button></div>
+      <div class="column"><button class="calculator-btn__num button is-dark" data-num=".">.</button></div>
+      <div class="column"><button class="calculator-btn__num button is-dark" data-num="0">0</button></div>
+      <div class="column"><button class="calculator-btn__result button is-primary">=</button></div>
+      <div class="column"><button class="calculator-btn__sign button" data-calc-type="add">+</button></div>
+      <div class="column"><button class="calculator-btn__delete button">DEL</button></div>
+      <div class="column"><button class="calculator-btn__clear button">CLR</button></div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

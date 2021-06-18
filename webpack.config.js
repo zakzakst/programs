@@ -5,7 +5,7 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const ImageminMozjpeg = require('imagemin-mozjpeg');
 
 // 変数の設定
-const PROJECT_DIR = '02';
+const PROJECT_DIR = '03';
 const MODE = 'production';
 const enabledSourceMap = MODE === 'development';
 
@@ -77,32 +77,32 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'style.css',
     }),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: `${__dirname}/src/${PROJECT_DIR}/img/`,
-          to: `${__dirname}/docs/${PROJECT_DIR}/img/[name][ext]`,
-        },
-      ],
-    }),
-    new ImageminPlugin({
-      test: /\.(jpe?g|png|gif|svg)$/i,
-      plugins: [
-        ImageminMozjpeg({
-          quality: 85,
-          progressive: true,
-        }),
-      ],
-      pngquant: {
-        quality: '70-85',
-      },
-      gifsicle: {
-        interlaced: false,
-        optimizationLevel: 10,
-        colors: 256,
-      },
-      svgo: {},
-    }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     {
+    //       from: `${__dirname}/src/${PROJECT_DIR}/img/`,
+    //       to: `${__dirname}/docs/${PROJECT_DIR}/img/[name][ext]`,
+    //     },
+    //   ],
+    // }),
+    // new ImageminPlugin({
+    //   test: /\.(jpe?g|png|gif|svg)$/i,
+    //   plugins: [
+    //     ImageminMozjpeg({
+    //       quality: 85,
+    //       progressive: true,
+    //     }),
+    //   ],
+    //   pngquant: {
+    //     quality: '70-85',
+    //   },
+    //   gifsicle: {
+    //     interlaced: false,
+    //     optimizationLevel: 10,
+    //     colors: 256,
+    //   },
+    //   svgo: {},
+    // }),
   ],
 
   resolve: {
